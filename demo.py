@@ -17,7 +17,7 @@ if __name__ == "__main__":
         train_file_array,test_file_array,_ = data_transformer.initiate_data_transformer(train_array,test_array)
 
         model_trainer = ModelTrainer()
-        model_trainer.initiate_model_trainer(train_file_array,test_file_array)
+        print(model_trainer.initiate_model_trainer(train_file_array,test_file_array))
 
     except Exception as e:
         raise CustomException(e,sys)
